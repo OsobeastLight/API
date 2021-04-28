@@ -10,7 +10,6 @@ import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import ru.api.appManager.ApiPage;
-import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 public class TestBase  {
@@ -39,7 +38,7 @@ public class TestBase  {
     }
 
     @BeforeTest
-    public void init() throws IOException {
+    public void init() {
 
         System.setProperty("webdriver.chrome.driver", "src/main/java/resources/chromedriver.exe");
         wd = new ChromeDriver();
