@@ -52,9 +52,4 @@ public class TestBase  {
         wd.quit();
     }
 
-
-    public WebDriver getDriver() {
-        wd = new ChromeDriver();
-        return wd;
-    }
 }
